@@ -1,0 +1,52 @@
+.sn-form__agree {
+    position: relative;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 22px;
+    font-size: 0;
+    cursor: pointer;
+}
+  
+.sn-form__agree > span:nth-child(2) {
+    position: absolute;
+    left: 1px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #323438;
+    border-radius: 2px;
+    background-color: #fff;
+}
+  
+.sn-form__agree > span:nth-child(3) {
+    font: 300 10px/1.2 MuseoSans;
+    color: #323438;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.sn-form__agree input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+  
+.sn-form__agree input[type="checkbox"]:checked + span:after {
+    content: url(../../assets/img/sn/check.svg);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    line-height: 0;
+}
+  
+.sn-form__agree a {
+    display: inline;
+    text-decoration: underline;
+}
+  
+.sn-form__agree a:hover {
+    text-decoration: none;
+}

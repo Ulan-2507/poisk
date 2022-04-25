@@ -1,0 +1,135 @@
+.sn-messenger {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -8px 0 24px 0;
+}
+
+.sn-messenger > :nth-child(1) {
+    width: 85px;
+}
+  
+.sn-messenger > :nth-child(2) {
+    padding: 0 0 0 11px;
+    width: calc(100% - 85px);
+}
+  
+.sn-messenger__select {
+    position: relative;
+}
+  
+.sn-messenger__select_active .sn-messenger__select-button {
+    border-bottom-color: transparent;
+    border-radius: 23px 23px 0 0;
+    background: #fff;
+}
+  
+.sn-messenger__select_active .sn-messenger__select-button:after {
+    -webkit-transform: translate(0, -50%) rotate(180deg);
+    transform: translate(0, -50%) rotate(180deg);
+}
+  
+.sn-messenger__select_active .sn-messenger__select-list {
+    display: block;
+}
+  
+.sn-messenger__select-button {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 0 0 10px;
+    height: 46px;
+    border: 1px solid #eeeeef;
+    border-radius: 23px;
+    background: #f9f9f9;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.sn-messenger__select-button:after {
+    content: url(../../assets/img/sn/row-down.svg);
+    line-height: 0;
+    position: absolute;
+    right: 21px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+}
+  
+.sn-messenger__select-list {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #eeeeef;
+    border-top-color: transparent;
+    border-radius: 0 0 23px 23px;
+    box-shadow: 0 20px 30px rgba(18, 42, 65, 0.0478857);
+    overflow: hidden;
+    z-index: 1;
+}
+  
+.sn-messenger__select-list li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+  
+.sn-messenger__select-list li:hover {
+    background: #eeeeef;
+}
+
+.sn-messenger__select-list label input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    right: 100%;
+    cursor: pointer;
+}
+
+.sn-messenger__select-list label {
+    display: block;
+    padding: 5px 10px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.sn-messenger__select-list li {
+    padding: 0;
+}
+
+@media (max-width: 575px) {
+    .sn-messenger__select-button {
+        height: 41px;
+    }
+    
+    .sn-messenger__select img {
+        width: 21px;
+    }
+    
+    .sn-messenger > :nth-child(1) {
+        width: 61px;
+    }
+    
+    .sn-messenger > :nth-child(2) {
+        padding: 0 0 0 9px;
+        width: calc(100% - 61px);
+    }
+    
+    .sn-messenger__select-button:after {
+        right: 7px;
+    }
+    
+}

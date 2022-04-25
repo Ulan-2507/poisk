@@ -1,0 +1,362 @@
+.finds__nav__wrap {
+    width: calc(100% - 212px);
+    padding-left: 60px;
+    padding-right: 70px;
+    position: relative;
+  }
+  
+.finds__nav__wrap:after {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 26px;
+    border: 1px solid #323438;
+    opacity: 0.08;
+}
+  
+.finds__nav {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+  
+.finds__nav .slick-list {
+    padding: 0 10px;
+}
+  
+.finds__nav-item {
+    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+    border-radius: 26px;
+    border: 1px solid transparent;
+    margin-right: 25px;
+    cursor: pointer;
+    padding-left: 60px;
+    padding-right: 30px;
+    height: 46px;
+    line-height: 46px;
+    color: #444e5b;
+    font-weight: 500;
+    font-size: 16px;
+}
+  
+.finds__nav-item:hover {
+    box-shadow: 0 0 15px rgba(68, 78, 91, 0.22);
+    border-color: #444e5b;
+}
+  
+.finds__nav-item:before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-35%);
+    transform: translateY(-35%);
+    left: 20px;
+}
+  
+.finds__nav-item:last-child {
+    margin-right: 0;
+}
+  
+.finds__nav-item.active {
+    box-shadow: 0 0 15px rgba(20, 119, 235, 0.32);
+    background-color: #4a90e2;
+    color: #fff;
+}
+  
+.finds__nav-item.active:hover {
+    box-shadow: 0 0 15px rgba(20, 119, 235, 0.32);
+    border-color: transparent;
+}
+  
+.finds__nav-item[rel="all"] {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 179px;
+    height: 46px;
+    font-size: 15px;
+    line-height: normal;
+    font-weight: 400;
+    color: #ff9419;
+    border: 1px solid #ff9419;
+}
+  
+.finds__nav-item[rel="all"]:hover {
+    box-shadow: 0 0 15px rgba(255, 148, 25, 0.22);
+    border-color: #ff9419;
+}
+  
+.finds__nav-item[rel="all"]:before {
+    position: relative;
+    left: auto;
+    top: auto;
+    -webkit-transform: none;
+    transform: none;
+    line-height: 0;
+    vertical-align: middle;
+    margin: 0 8px 0 5px;
+    content: url(../../assets/img/main/findnav1.svg);
+}
+  
+.finds__nav-item[rel="all"].active {
+    border-color: #4a90e2;
+    color: #fff;
+}
+  
+.finds__nav-item[rel="all"].active:before {
+    content: url(../../assets/img/main/findnav1-white.svg);
+}
+  
+.finds__nav-item[rel="all"].active:hover {
+    box-shadow: none;
+    border-color: #4a90e2;
+}
+  
+.finds__nav-item[rel="keys"]:before {
+    content: url(../../assets/img/main/findnav2.svg);
+}
+  
+.finds__nav-item[rel="keys"].active:before {
+    content: url(../../assets/img/main/findnav2-white.svg);
+}
+  
+.finds__nav-item[rel="hi-tech"]:before {
+    content: url(../../assets/img/main/findnav3.svg);
+}
+  
+.finds__nav-item[rel="hi-tech"].active:before {
+  content: url(../../assets/img/main/findnav3-white.svg);
+}
+  
+.finds__nav-item[rel="wallets"]:before {
+    content: url(../../assets/img/main/findnav4.svg);
+}
+  
+.finds__nav-item[rel="wallets"].active:before {
+    content: url(../../assets/img/main/findnav4-white.svg);
+}
+  
+.finds__nav-item[rel="animals"]:before {
+    content: url(../../assets/img/main/findnav7.svg);
+}
+  
+.finds__nav-item[rel="animals"].active:before {
+    content: url(../../assets/img/main/findnav7-white.svg);
+}
+  
+.finds__nav-item[rel="jewelry"]:before {
+    content: url(../../assets/img/main/findnav8.svg);
+}
+  
+.finds__nav-item[rel="jewelry"].active:before {
+    content: url(../../assets/img/main/findnav8-white.svg);
+}
+  
+.finds__nav-item[rel="bags"]:before {
+    content: url(../../assets/img/main/findnav5.svg);
+}
+  
+.finds__nav-item[rel="bags"].active:before {
+    content: url(../../assets/img/main/findnav5-white.svg);
+}
+  
+.finds__nav-item[rel="documents"]:before {
+    content: url(../../assets/img/main/findnav9.svg);
+}
+  
+.finds__nav-item[rel="documents"].active:before {
+    content: url(../../assets/img/main/findnav9-white.svg);
+}
+  
+.finds__nav-item[rel="other"]:before {
+    content: url(../../assets/img/main/findnav6.svg);
+}
+  
+.finds__nav-item[rel="other"].active:before {
+    content: url(../../assets/img/main/findnav6-white.svg);
+}
+  
+
+.finds__nav-item:not([rel="all"]) {
+    padding: 0;
+    height: auto;
+    font: 500 16px/46px MuseoSans;
+    transition: none;
+}
+  
+.finds__nav-item:not([rel="all"]):before {
+    line-height: 1;
+    top: 24px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+  
+.finds__nav-item:not([rel="all"]) > span {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 30px 0 60px;
+    height: 46px;
+}
+  
+.finds__nav-item_haslist > span:after {
+    content: url(../../assets/img/fsearch/row.svg);
+    line-height: 0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+  
+.finds__nav-item_haslist-active.finds__nav-item.active {
+    color: #444e5b;
+    background: 0 0;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+  
+.finds__nav-item_haslist-active > span {
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.finds__nav-item_haslist-active > span:after {
+    -webkit-transform: translate(0, -50%) rotate(180deg);
+    transform: translate(0, -50%) rotate(180deg);
+}
+  
+.finds__nav-item_haslist-active .finds__categories {
+    display: block;
+}
+  
+.finds__nav__arrow {
+   transition: 0.2s;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #4a90e2;
+    box-shadow: 0 0 15px rgba(20, 119, 235, 0.32);
+    background-repeat: no-repeat;
+    background-position: 13px center;
+    background-image: url(../../assets/img/main/ar-right-white.svg);
+}
+  
+.finds__nav__arrow-prev {
+    left: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+  
+.finds__nav__arrow-next {
+    right: 0;
+}
+  
+.finds__nav__arrow:hover {
+    background-color: #277adc;
+}
+  
+.finds__nav__arrow.slick-disabled {
+    background-color: #babec2;
+    box-shadow: none;
+}
+  
+.finds__nav__arrow.slick-disabled:hover {
+    background-color: #babec2;
+    cursor: initial;
+}
+
+.finds__nav-item.finds__nav-item_haslist-active[rel="hi-tech"]:before {
+    content: url(../../assets/img/main/findnav3.svg);
+}
+  
+.finds__nav-item.finds__nav-item_haslist-active[rel="animals"]:before {
+    content: url(../../assets/img/main/findnav7.svg);
+}
+  
+.finds__nav-item_haslist.active:not(.finds__nav-item_haslist-active)
+    > span:after {
+    content: url(../../assets/img/fsearch/row-white.svg);
+}
+
+
+@media screen and (max-width: 1200px) {
+    .finds__nav-item {
+        margin-right: 15px;
+        padding-left: 45px;
+        padding-right: 15px;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    .finds__nav-item:before {
+        left: 16px;
+    }
+}
+  
+@media screen and (max-width: 992px) {
+    .finds__nav__wrap {
+        padding-left: 50px;
+        padding-right: 60px;
+        width: calc(100% - 205px);
+    }
+    
+    .finds__nav:after {
+        display: none;
+    }
+    
+    .finds__nav-item {
+        box-shadow: none !important;
+    }  
+}
+
+@media (max-width: 575px) {
+    .finds__nav-item {
+        display: none;
+    }
+    
+    .finds__nav-item[rel="all"] {
+        display: none;
+    }
+    
+    .finds__nav__wrap {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    section#finds .finds__nav__wrap {
+        width: 100%;
+        padding: 0;
+        margin-top: 10px;
+    }
+    
+    section#finds .finds__nav__arrow {
+        top: -50px;
+    }
+    
+    section#finds .finds__nav__arrow-prev {
+        left: initial;
+        right: 60px;
+    }
+}

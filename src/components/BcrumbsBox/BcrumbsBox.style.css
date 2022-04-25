@@ -1,0 +1,55 @@
+.bcrumbs-box {
+    padding: 15px 0;
+}
+
+.bcrumbs {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 -17px;
+    font: 300 12px/1.2 MuseoSans;
+    color: #323438;
+}
+  
+.bcrumbs li {
+    position: relative;
+}
+  
+.bcrumbs li:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    width: 1px;
+    height: 8px;
+    background: #94979e;
+}
+  
+.bcrumbs li:last-child {
+    padding: 3px 17px;
+}
+  
+.bcrumbs li:last-child:after {
+    display: none;
+}
+  
+.bcrumbs a {
+    display: inline-block;
+    padding: 3px 17px;
+    color: #94979e;
+}
+  
+.bcrumbs a:hover {
+    color: #323438;
+}
+
+@media (max-width: 575px) {
+    .bcrumbs-box {
+        display: none;
+    } 
+}

@@ -1,0 +1,130 @@
+.findsmb {
+    display: none;
+    width: 200px;
+    margin: 0 auto 21px;
+}
+  
+.findsmb-categories {
+    position: relative;
+}
+  
+.findsmb-categories_active {
+    box-shadow: 0 0 30px rgba(18, 42, 65, 0.0483501);
+}
+  
+.findsmb-categories_active .findsmb-categories__select {
+    border: 1px solid #eeeeef;
+    border-bottom-color: transparent;
+    border-radius: 16px 16px 0 0;
+}
+  
+.findsmb-categories_active .findsmb-categories__select:after {
+    -webkit-transform: translate(0, -50%) rotate(180deg);
+    transform: translate(0, -50%) rotate(180deg);
+}
+  
+.findsmb-categories_active .findsmb-categories__list {
+    display: block;
+}
+
+
+.findsmb-categories__select {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 0 0;
+    padding: 0 30px 0 44px;
+    height: 40px;
+    font: 500 15px/1.2 MuseoSans;
+    border: 1px solid #ff9419;
+    border-radius: 25.5px;
+    color: #ff9419;
+    cursor: pointer;
+}
+  
+.findsmb-categories__select > :nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 44px;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+  
+.findsmb-categories__select > :nth-child(2) {
+    display: inline-block;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+  
+.findsmb-categories__select:after {
+    content: url(../../assets/img/main/arr-2.svg);
+    position: absolute;
+    right: 17px;
+    top: 50%;
+    line-height: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    transition: -webkit-transform 0.1s;
+    transition: transform 0.1s;
+    transition: transform 0.1s, -webkit-transform 0.1s;
+}
+  
+.findsmb-categories__list {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    border: 1px solid #eeeeef;
+    border-top-color: transparent;
+    border-radius: 0 0 16px 16px;
+    font: 500 13px/1.2 MuseoSans;
+    color: #444e5b;
+    background: #fff;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.findsmb-categories__list li {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 14.5px 5px 14.5px 44px;
+    cursor: pointer;
+}
+  
+.findsmb-categories__list li > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 44px;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+  
+.findsmb-categories__list li:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 575px) {
+    .findsmb {
+        display: block;
+    }
+}

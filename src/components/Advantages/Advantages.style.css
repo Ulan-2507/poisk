@@ -1,0 +1,67 @@
+section#advantages {
+    background-color: #f8fbfe;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+  
+section#advantages .advantages-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    section#advantages {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    section#advantages .advantages-wrap {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 459px) {
+    section#advantages {
+      padding: 9px 0 87px;
+    }
+
+    section#advantages .advantages-wrap .slick-dots {
+        position: absolute;
+        left: 0;
+        bottom: -45px;
+        width: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    section#advantages .advantages-wrap .slick-dots > * {
+        margin: 0 5.5px;
+    }
+    
+    section#advantages .advantages-wrap .slick-dots > * button {
+        display: block;
+        padding: 0;
+        width: 9px;
+        height: 9px;
+        border: 1px solid #4a90e2;
+        border-radius: 50%;
+        font-size: 0;
+    }
+    
+    section#advantages .advantages-wrap .slick-dots > .slick-active button {
+        background: #4a90e2;
+    }
+}
